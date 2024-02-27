@@ -33,6 +33,7 @@ function Layout() {
     <div>
       {!!windows.length && (
         <ResponsiveReactGridLayout
+          resizeHandles={["s", "w", "e", "n", "sw", "nw", "se", "ne"]}
           draggableCancel=".non-draggable"
           className="layout"
           layouts={layouts}
